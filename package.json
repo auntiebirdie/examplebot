@@ -1,0 +1,18 @@
+{
+  "name": "examplebot",
+  "description": "An example Discord bot to kickstart your project.",
+  "version": 1,
+  "author": "Auntie Birdie <birdieauntie@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "pm2 start ecosystem.config.js",
+    "logs": "pm2 logs",
+    "stop": "pm2 stop ecosystem.config.js",
+    "test": "node --env-file=.env index.js",
+    "commands": "node --env-file=.env commands.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.15.2",
+    "pm2": "^5.3.1"
+  }
+}
